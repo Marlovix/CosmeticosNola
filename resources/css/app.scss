@@ -1,0 +1,50 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-item {
+    text-align: center;
+    width: 150px;
+    height: 160px;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.grid-item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.navbar {
+    margin-bottom: 25px;
+    border-radius: 0;
+}
+
+.category-option {
+    cursor: pointer;
+}
+
+#category-name {
+    margin-bottom: 25px;
+}
+
+#no-more-data {
+    margin-top: 25px;
+}
+
+#cart:hover {
+    background-color: transparent !important;
+}
+
+footer {
+    margin-top: 25px;
+    background-color: #f2f2f2;
+    padding: 25px;
+}
