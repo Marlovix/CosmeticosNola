@@ -16,7 +16,7 @@ class ProductSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        foreach (range(1, 100) as $index)  {
+        foreach (range(1, 500) as $index)  {
             $img = ($index % 11) + 1;
             \DB::table('products')->insert([
                 'category_id' => $index % 5 + 1,
@@ -24,8 +24,7 @@ class ProductSeeder extends Seeder
                 'description' => $faker->paragraph($nb =2),
                 'price' => $faker->randomFloat($nbMaxDecimals = 2, $min = 1, $max = 1000),
                 'quantity' => $faker->numberBetween($min = 1, $max = 10),
-                //'disabled' => $faker->boolean,
-                'disabled' => false,
+                'disabled' => $faker->boolean,
                 'img_url' => url("/images/" . $img . ".jpeg")
             ]);
         }
