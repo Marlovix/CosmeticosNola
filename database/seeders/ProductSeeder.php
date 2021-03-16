@@ -20,7 +20,7 @@ class ProductSeeder extends Seeder
             $img = ($index % 11) + 1;
             \DB::table('products')->insert([
                 'category_id' => $index % 5 + 1,
-                'title' => $faker->unique()->word,
+                'title' => $faker->word,
                 'description' => $faker->paragraph($nb =2),
                 'price' => $faker->randomFloat($nbMaxDecimals = 2, $min = 1, $max = 1000),
                 'quantity' => $faker->numberBetween($min = 1, $max = 10),
