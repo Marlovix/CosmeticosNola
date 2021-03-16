@@ -16,7 +16,7 @@ class ProductSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        foreach (range(1, 500) as $index)  {
+        foreach (range(1, 200) as $index)  {
             $img = ($index % 11) + 1;
             \DB::table('products')->insert([
                 'category_id' => $index % 5 + 1,
