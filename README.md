@@ -7,7 +7,24 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Description
+A React App to fetch diferents products in an infinite scroll and with the ability to add products to the cart.
+
 ## Usage
+
+- git clone https://github.com/Marlovix/cosmeticosnola
+- cd cosmeticosnola
+- npm install
+- composer install
+- ./vendor/bin/sail up
+- Create .env from .env.example
+- Change DB_HOST=127.0.0.1 by DB_HOST=mysql
+- ./vendor/bin/sail php artisan migrate:reset
+- ./vendor/bin/sail php artisan migrate
+- ./vendor/bin/sail php artisan key:generate
+- ./vendor/bin/sail php artisan db:seed
+- Access to localhost in browser
+
 
 ## About Laravel
 
