@@ -16,9 +16,9 @@ A React App to fetch diferents products in an infinite scroll and with the abili
 - cd cosmeticosnola
 - npm install
 - composer install
-- ./vendor/bin/sail up
 - cp .env.example .env
 - Change DB_HOST=127.0.0.1 by DB_HOST=mysql
+- ./vendor/bin/sail up
 - ./vendor/bin/sail php artisan migrate:reset
 - ./vendor/bin/sail php artisan migrate
 - ./vendor/bin/sail php artisan key:generate
